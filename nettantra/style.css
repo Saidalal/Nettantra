@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+ body
+ {
+    overflow: hidden;
+     background-image: url("background.jpg");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:cover;
+     width: 150%;
+     height: 100vh;
+     
+ }
+ .container{
+    width: 100%;
+    min-height: 100vh;   
+}
+nav
+{
+    display: flex;
+    width: 100%;
+    z-index: 111;
+    line-height: 80px;
+    
+    
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    height: 75px;
+    list-style: none;
+    
+}
+nav ul li{
+    font-family:sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0 15px;
+    
+}
+ nav ul li  a{
+     text-decoration: none;
+     color: rgb(236, 236, 226);
+     padding: 8px 25px;
+     transition: all .5s ease;
+ }
+ nav ul li a:hover{
+     background-color: aliceblue;
+     color: rgb(215, 88, 88);
+     box-shadow: 0 0 10px rgb(148, 164, 216);
+ }
+
+ .logo img{
+    width: 155px;
+    padding:  0 7px;
+    
+}
+.logo {
+    color: aliceblue;
+    display: flex;
+    align-items:center;
+    font-size: 50px;
+    font-weight: 400;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    
+}
+.links a{
+    font-size: 30px;
+    margin: 25px 10px;
+    color: wheat;
+}
+.links a:hover{
+    color: rgb(221, 47, 47);
+}
+.wrapper
+{
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+.wrapper::before{
+    position: absolute;
+    content: '';
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    left: 12%;
+    top: 30%;
+    background: linear-gradient(45deg,aqua,rgb(255, 255, 0));
+    animation: object1 6s linear infinite;
+}
+@keyframes object1{
+
+    50%{
+        left: 13%;
+        top:57%;
+    }
+}
+.cols{
+    width: 50%;
+}
+.cols0{
+    z-index: 5;
+}
+.topline{
+     display: block;
+     position: relative;
+     font-size: 35px;
+     letter-spacing: 4px;
+     color: rgb(158, 193, 193);
+}
+.topline::after{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: bisque;
+}
+h1{
+    display: block;
+    font-size: 7em;
+    font-weight: 900;
+    color: rgb(243, 243, 85);
+}
+.multitext{
+    color: rgb(231, 240, 238);
+    text-transform: capitalize;
+}
+p{
+    display: block;
+    width: 90%;
+    font-size:2em;
+    color: rgb(206, 218, 224);
+}

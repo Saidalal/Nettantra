@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 20px;
+    background-image:url('edu.jpg') ;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    position: relative;
+    max-width: 900px;
+    width: 110%;
+    border-radius: 6px;
+    padding: 6px 30px;
+    margin: -5 20px;
+    background-color: rgba(52, 234, 177, 0.834);
+    box-shadow: 0 5px 10px rgba(255, 0, 0, 0.872);
+}
+.main header{
+    position: relative;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(223, 31, 31);
+}
+.main header::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    height: 35px;
+    width: 27px;
+    border-radius: 8px;
+   
+}
+form .button{
+    height: 45px;
+    margin: 35px ;
+  }
+  form .button input{
+    height: 80%;
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  }
+  form .button input:hover{
+   /* transform: scale(0.99); */
+   background: linear-gradient(-135deg, #c9b43d, #9b59b6);
+   }
+   @media(max-width: 584px){
+    .container{
+     max-width: 100%;
+   }
+   form .user-details .input-box{
+       margin-bottom: 15px;
+       width: 100%;
+     }
+     form .category{
+       width: 100%;
+     }
+     .content form .user-details{
+       max-height: 300px;
+       overflow-y: scroll;
+     }
+     .user-details::-webkit-scrollbar{
+       width: 5px;
+     }
+     }
+     @media(max-width: 459px){
+     .container .content .category{
+       flex-direction: column;
+     }
+   }
+    
